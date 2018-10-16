@@ -1,0 +1,22 @@
+block variables
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title #{title}
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    link(href="./img/favicon.ico" rel="icon")
+    link(rel='stylesheet' href='./css/foundation.css')
+    link(rel='stylesheet' href='./css/app.css')
+  include ../sprite_svg/sprite.svg
+  body
+    .wrapper
+        block content
+    //- include ./common/popup1.pug
+    //- include ./common/popup2.pug
+    script(src='./js/foundation.js')
+    script(src='./js/everad.js')   
+    script(src='./js/app.js')

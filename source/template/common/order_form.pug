@@ -1,0 +1,40 @@
+.order-form__box
+  .discount-plash
+    img.discount-plash__bg(src=path+"discount_bg.png", alt="discount_bg")
+    .discount-plash__amount
+      span.discount-plash__amount-number 50
+      span.discount-plash__amount-percent %
+  .order-form
+    .price
+      .old-price
+        span.price__title Старая цена
+        .price__price
+          span.amount.x_price_previous 999
+          span.currency.x_currency руб<span>.</span>
+      .new-price
+        span.price__title Новая цена
+        .price__price
+          span.amount.x_price_current 500
+          span.currency.x_currency руб<span>.</span>
+    .order-form__wrap
+      .order-form__feft-pack
+        p Осталось 
+          span.last-pack 15
+          span 
+          |упаковок <span class="dib">по Акции</span>
+      form.order-form__form.x_order_form(action="/submit" method ="POST")
+        input.order-form__name(type="text" name="name" required placeholder="Имя")
+        input.order-form__phone(type="text" name="phone" required placeholder="Телефон")
+        button.order-button
+          span.order-button__title Заказать
+          span.order-button__text со скидкой
+  .order-form__save-data
+    div
+      span.icon
+        <svg>
+          <use xlink:href="#save_i"></use>
+        </svg>
+      span Ваши данные защищены!
+
+
+      

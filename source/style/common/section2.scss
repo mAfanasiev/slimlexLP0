@@ -1,0 +1,19 @@
+.section2{
+  background-color: rgba(green, 0.9);
+  .section-box{
+   // outline: $ln;
+  }
+  .section-title__text{
+    color: #fff;
+    span{
+      color: #000;
+    }
+  }
+}
+.some-block_2{
+  color: #fff;
+  text-align: center;
+  p{
+    margin-bottom: 0;
+  }
+}

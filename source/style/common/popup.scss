@@ -1,0 +1,124 @@
+.ever-popup__inner {
+        max-width: 100% !important;
+    }
+
+    .pop-up {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .pop-up__box {
+        background-color: rgba(#fff, 0.9);
+        border: 1px solid rgba(100, 100, 100, 0.7);
+        box-sizing: border-box;
+        border-radius: 8px;
+        width: 760px;
+        max-width: 100%;
+        padding: 15px 15px;
+    }
+    .pop-up__box *{
+         box-sizing: border-box;
+    }
+
+    .popup-title {
+        text-align: center;
+        font-size: 40px;
+    }
+    .popup-title h3{
+        margin: 0;
+    }
+
+    .popup-title h2 {
+        margin: 0;
+    }
+
+    .pop-up__content {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        -ms-align-items: center;
+        align-items: center;
+         padding: 0;
+    }
+    .image-pack{
+        display: inline-block;
+        max-width: 350px;
+         max-height: 350px;
+    }
+
+    .image-pack img {
+       display: inline-block;
+       max-width: 100%;
+        max-height: 100%;
+    }
+
+    .pop-up__left {
+       flex: 1;
+       text-align: center;
+        min-width: 250px;
+        padding-right: 20px;
+    }
+
+    .pop-up__right {
+        /* width: 300px;*/
+        max-width: 100%;
+    }
+
+    .form-box {}
+
+    .form-box > * {
+        float: none !important;
+        margin: 0 !important;
+        /* position: relative !important;
+         left: auto;
+         right: auto;
+         top: auto;
+         bottom: auto;*/
+    }
+    .form-box *{
+        max-width: 100% !important;
+    }
+
+    @media (max-width: 999px) {
+        .pop-up__box {
+            width: 460px;
+        }
+        .pop-up__content {
+            justify-content: center;
+        }
+        .pop-up__left{
+            padding-right: 0;
+        }
+        .image-pack{
+            padding-bottom: 20px;
+        }
+        .image-pack img{
+            max-height: 280px;
+        }
+        
+    }
+    @media (max-width: 767px){
+        .image-pack{
+            display: none;
+        }
+    }
+    @media (max-width: 479px){
+      .pop-up__box{
+        border: 0;
+        background-color: transparent;
+        width: 300px;
+        padding: 0;
+        width: 300px;
+        .order-form{
+            box-shadow: none;
+        }
+      }
+      
+    }
